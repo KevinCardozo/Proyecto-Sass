@@ -1,0 +1,42 @@
+@media (max-width:385px){
+    footer{
+        height: 9.375rem;
+        div{
+            height: 3.125rem;
+        }
+        .logos{
+            img{
+                height: 2.5rem;
+            }
+        }
+        .copy{
+            display: none;
+            p{
+                font-size: .375rem;
+            }
+        }
+    }
+    .destacados{
+        .container-producto{
+            justify-content: space-around;
+            article{
+                width: 9.375rem;
+                margin: 0rem .125rem .125rem .125rem;
+                h3{
+                    font-size: .625rem;
+                }
+                h4{
+                    font-size: .75rem;
+                }
+                    
+                button{
+                    padding: .125rem .75rem;
+                    margin-left: 15%;
+                    }
+                    
+                
+                }
+        }
+       
+    }
+}

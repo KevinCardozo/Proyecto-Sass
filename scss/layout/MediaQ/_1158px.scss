@@ -1,0 +1,34 @@
+@media (max-width:1158px){
+    .container-nov{
+        .nov{
+            .img-nov{
+                height: 60%;
+                margin-right: 2.5rem;
+                img{
+                    height: 26.25rem;
+                }
+            }
+            .div-nov{
+                height: 25rem;
+                h2{
+                    font-size: 2.25rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+                p{
+                    font-size: 2.25rem;
+                }
+            }
+        }
+    }
+ 
+    .destacados{
+        height: 56.25rem;
+        padding-bottom: 9.375rem;
+        .container-producto{
+            article{
+                margin: 0rem 1.5625rem 3.125rem 0rem;
+            }
+        }
+    }
+}

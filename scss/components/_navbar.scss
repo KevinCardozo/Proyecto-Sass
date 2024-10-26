@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 70px;
+    padding-right: 1.875rem;
+    li{
+        &:hover{
+            transform: scale(1.1);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.5625rem;
+            font-family: "Italiana", system-ui;
+            &:hover{
+                color: gray;
+            }
+            
+            }
+          
+        }
+    
+    }

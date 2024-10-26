@@ -1,0 +1,14 @@
+.banner{
+    width: 100%;
+    height: 18.75rem;
+    background-image: url(../assets/img/bannerProducto.jfif);
+    @include backgraund(center,contain);
+    display: flex;
+}
+.bannerSale{
+    width: 100%;
+    height: 21.875rem;
+    @include backgraund(center,contain);
+    background-image: url(../assets/img/bannerSale2.jfif);
+
+}

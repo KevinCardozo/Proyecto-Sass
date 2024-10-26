@@ -1,0 +1,34 @@
+@media (max-width:584px){
+    .container-nov{
+        .nov{
+            .img-nov{
+                margin-right: .3125rem;
+                width: 40%;
+                height: 15.625rem;
+                img{
+                    height: 17.5rem;
+                }
+            }
+            .div-nov{
+                h2{
+                    font-size: .875rem;
+                }
+                p{
+                    font-size: .875rem;
+                }
+            }
+        }
+    }
+    .container-tienda{
+        article{
+            width: 11.5625rem;
+            height: 25rem;
+            div{
+                height: 17.5rem;
+            }
+        }
+
+    }
+  
+    
+}

@@ -1,0 +1,598 @@
+/*utilities*/
+/*base*/
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*layaout*/
+header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  padding: 20px 0px;
+  background-color: black;
+  position: static;
+  top: 0px; }
+  header div h1 {
+    font-size: 6em;
+    color: white;
+    font-family: "Italiana";
+    transform: skew(7deg); }
+
+main {
+  background-image: linear-gradient(#dad3d3, #474747); }
+
+.container-nov {
+  background-image: url(../assets/img/banner.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  width: 100%; }
+  .container-nov .nov {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 43.75rem; }
+    .container-nov .nov div img {
+      height: 31.25rem;
+      width: 100%; }
+    .container-nov .nov .img-nov {
+      height: 70%;
+      margin-right: 6.25rem;
+      margin-top: 1.875rem;
+      box-shadow: 5px 5px 2px 4px rgba(15, 14, 14, 0.756);
+      /*border: 3px solid #bc3636;*/
+      border-radius: 40%;
+      background-color: #05050585; }
+      .container-nov .nov .img-nov:hover {
+        transform: scale(1.2);
+        box-shadow: none;
+        transition: transform 1s cubic-bezier(0, 0.64, 0.78, 0.81); }
+    .container-nov .nov .div-nov {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0rem;
+      background-color: rgba(0, 0, 0, 0.729);
+      border: .3125rem double #ffffff; }
+      .container-nov .nov .div-nov h2 {
+        font-size: 2.5rem;
+        padding-top: 1.25rem;
+        padding-bottom: .9375rem;
+        color: white;
+        font-family: "Roboto", sans-serif; }
+      .container-nov .nov .div-nov p {
+        font-size: 2.5rem;
+        padding-bottom: .9375rem;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        transform: skew(7deg); }
+      .container-nov .nov .div-nov a button {
+        background-color: rgba(0, 0, 0, 0.486);
+        padding: 20px 50px;
+        border: 0.1875rem solid white;
+        color: white; }
+        .container-nov .nov .div-nov a button:hover {
+          background-color: black;
+          transform: scale(1.02); }
+        .container-nov .nov .div-nov a button:active {
+          background-color: white;
+          color: black; }
+      .container-nov .nov .div-nov a :active {
+        background-color: white;
+        color: black; }
+
+.swirl-in-fwd {
+  -webkit-animation: swirl-in-fwd 1.5s ease-out 0.1s both;
+  animation: swirl-in-fwd 1.5s ease-out 0.1s both; }
+
+@-webkit-keyframes swirl-in-fwd {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes swirl-in-fwd {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+footer {
+  width: 100%;
+  height: 12.5rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5.25rem; }
+  footer .wsp {
+    position: fixed;
+    bottom: 1.875rem;
+    right: .625rem; }
+    footer .wsp img {
+      height: 3.4375rem; }
+  footer div ul {
+    display: flex;
+    list-style: none;
+    gap: 1.25rem; }
+    footer div ul a {
+      text-decoration: none;
+      color: white; }
+  footer .logos {
+    align-self: end;
+    height: 40%; }
+    footer .logos img {
+      height: 4.625rem; }
+  footer .copy {
+    align-self: flex-end; }
+
+.nosotros {
+  margin-left: 12.5rem;
+  padding: 2.5rem;
+  width: 75%;
+  font-family: "Roboto", sans-serif; }
+  .nosotros h2 {
+    margin-bottom: 1.875rem; }
+  .nosotros p {
+    font-size: 1.5625rem; }
+
+/*components*/
+.navbar {
+  display: flex;
+  list-style: none;
+  gap: 70px;
+  padding-right: 1.875rem; }
+  .navbar li:hover {
+    transform: scale(1.1); }
+  .navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5625rem;
+    font-family: "Italiana", system-ui; }
+    .navbar li a:hover {
+      color: gray; }
+
+.destacados {
+  padding-bottom: 5rem;
+  height: 50rem;
+  background-image: linear-gradient(white, #262525); }
+  .destacados .container-producto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    flex-wrap: wrap;
+    height: 100%; }
+    .destacados .container-producto h2 {
+      width: 100%;
+      padding-top: 3.125rem;
+      margin-bottom: .625rem;
+      display: flex;
+      justify-content: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 2.1875rem; }
+    .destacados .container-producto article {
+      width: 17.5rem;
+      height: 18.75rem;
+      margin: 0px 3.125rem 3.125rem 3.125rem;
+      border-radius: .3125rem;
+      box-shadow: .1875rem .1875rem .1875rem .1875rem    black; }
+      .destacados .container-producto article:hover {
+        transform: scale(1.25);
+        transition: transform 0.5s cubic-bezier(0, 0.9, 0.71, 0.95); }
+      .destacados .container-producto article div {
+        width: 100%;
+        height: 11.25rem; }
+        .destacados .container-producto article div img {
+          background-position: center;
+          background-size: contain;
+          width: 100%;
+          height: 100%; }
+      .destacados .container-producto article h3 {
+        padding: 1.25rem 0px .3125rem .25rem;
+        font-size: 1.25rem;
+        font-family: "Roboto", sans-serif; }
+      .destacados .container-producto article h4 {
+        padding-left: .375rem;
+        font-size: 1.25rem;
+        font-family: "Roboto", sans-serif; }
+      .destacados .container-producto article button {
+        margin-left: 20%;
+        background-color: #141414;
+        color: white;
+        padding: 1.25rem 3.125rem;
+        border: 5px double #8e8e8e; }
+
+.slide-in-left {
+  -webkit-animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both; }
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+.banner {
+  width: 100%;
+  height: 18.75rem;
+  background-image: url(../assets/img/bannerProducto.jfif);
+  background-position: center;
+  background-size: contain;
+  display: flex; }
+
+.bannerSale {
+  width: 100%;
+  height: 21.875rem;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../assets/img/bannerSale2.jfif); }
+
+.container-tienda {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .container-tienda article {
+    width: 22.5rem;
+    height: 37.5rem;
+    margin: 1.25rem 2.5rem 0px 2.5rem; }
+    .container-tienda article:hover {
+      transform: scale(1.07);
+      transition: transform 0.5s cubic-bezier(0, 0.9, 0.71, 0.95); }
+    .container-tienda article div img {
+      width: 100%;
+      height: 100%;
+      border: 0.5rem solid #111111;
+      background-color: rgba(75, 80, 80, 0.76); }
+    .container-tienda article h3 {
+      font-size: 1.5625rem;
+      font-family: "Roboto", sans-serif;
+      padding-top: 1.25rem; }
+    .container-tienda article h4 {
+      font-size: 1.875rem;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      padding-bottom: 5.625rem;
+      margin-bottom: 5.625rem; }
+
+.contenedor-contacto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); }
+  .contenedor-contacto .contacto {
+    font-family: "Roboto", sans-serif;
+    margin: 1.25rem 0rem 1.5625rem 0rem;
+    grid-column: 2/3;
+    grid-row: 1/5;
+    justify-content: center; }
+    .contenedor-contacto .contacto input {
+      padding: .3125rem;
+      width: 37.5rem;
+      border: 2px solid black; }
+    .contenedor-contacto .contacto .contacto-mensaje {
+      height: 18.75rem; }
+    .contenedor-contacto .contacto .button-contacto {
+      background-color: black;
+      color: white;
+      padding: .5rem;
+      margin-top: 1.25rem; }
+    .contenedor-contacto .contacto :hover {
+      text-decoration: underline; }
+    .contenedor-contacto .contacto :active {
+      color: black;
+      background-color: white; }
+  .contenedor-contacto .suscribite {
+    margin-top: 1.875rem;
+    padding-bottom: 3.75rem;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    align-items: end; }
+    .contenedor-contacto .suscribite .contacto-email {
+      padding: .5rem;
+      width: 80%; }
+    .contenedor-contacto .suscribite .button-contacto {
+      background-color: black;
+      color: white;
+      padding: .5rem;
+      margin-top: 1.25rem; }
+    .contenedor-contacto .suscribite :hover {
+      text-decoration: underline; }
+    .contenedor-contacto .suscribite :active {
+      color: black;
+      background-color: white; }
+
+.titulo-contacto {
+  font-family: "Italiana, System-ui";
+  margin: 0rem 0rem 1.875rem 12.5rem;
+  padding-top: 1.875rem; }
+
+/*mediaQ*/
+@media (max-width: 1158px) {
+  .container-nov .nov .img-nov {
+    height: 60%;
+    margin-right: 2.5rem; }
+    .container-nov .nov .img-nov img {
+      height: 26.25rem; }
+  .container-nov .nov .div-nov {
+    height: 25rem; }
+    .container-nov .nov .div-nov h2 {
+      font-size: 2.25rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+    .container-nov .nov .div-nov p {
+      font-size: 2.25rem; }
+  .destacados {
+    height: 56.25rem;
+    padding-bottom: 9.375rem; }
+    .destacados .container-producto article {
+      margin: 0rem 1.5625rem 3.125rem 0rem; } }
+
+@media (max-width: 1024px) {
+  header div h1 {
+    font-size: 4em; }
+  header .navbar {
+    gap: 3.125rem; }
+    header .navbar li a {
+      font-size: 1.25rem; }
+  .container-nov {
+    height: 31.25rem;
+    background-size: contain; }
+    .container-nov .nov {
+      height: 31.25rem; }
+      .container-nov .nov .img-nov {
+        margin-right: 1.25rem; }
+        .container-nov .nov .img-nov img {
+          height: 21.875rem;
+          padding-bottom: 1.5625rem; }
+      .container-nov .nov .div-nov {
+        height: 21.875rem; }
+        .container-nov .nov .div-nov h2 {
+          font-size: 1.875rem;
+          padding-top: .625rem;
+          padding-bottom: .625rem; }
+        .container-nov .nov .div-nov p {
+          font-size: 1.875rem;
+          padding-bottom: .625rem; }
+        .container-nov .nov .div-nov a button {
+          padding: .9375rem 3.125rem; }
+  .destacados {
+    height: 56.25rem; }
+    .destacados .container-producto h2 {
+      padding-bottom: 1.25rem;
+      align-content: center;
+      font-size: 1.25rem; }
+    .destacados .container-producto article {
+      margin: 0px .3125rem .3125rem .3125rem;
+      width: 15rem;
+      height: 16.25rem; }
+      .destacados .container-producto article div {
+        height: 9.375rem; }
+      .destacados .container-producto article h3 {
+        padding: .375rem 0px .3125rem .25rem;
+        font-size: .9375rem; }
+      .destacados .container-producto article h4 {
+        padding-left: .375rem; }
+      .destacados .container-producto article button {
+        padding: .625rem 1.25rem; }
+  footer {
+    gap: 4.375rem; }
+    footer .wsp img {
+      height: 3.75rem; }
+    footer div ul {
+      gap: 1.25rem;
+      font-size: .9375rem;
+      height: 5rem; }
+    footer .logos {
+      width: 15%;
+      display: flex; }
+      footer .logos img {
+        height: 3.75rem; }
+    footer .copy {
+      width: 6.875rem; }
+      footer .copy p {
+        font-size: .625rem; }
+  .banner {
+    height: 12.5rem; }
+  .container-tienda article {
+    margin: 1.25rem .625rem 0px .625rem; } }
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+    gap: none; }
+    header .navbar {
+      gap: 1.25rem; }
+  .container-nov {
+    height: 25rem; }
+    .container-nov .nov {
+      height: 25rem; }
+      .container-nov .nov .img-nov {
+        height: 17.5rem; }
+        .container-nov .nov .img-nov img {
+          height: 18.75rem; }
+      .container-nov .nov .div-nov {
+        width: 50%;
+        height: 12.5rem; }
+        .container-nov .nov .div-nov h2 {
+          font-size: 1.125rem;
+          padding-bottom: .0625rem; }
+        .container-nov .nov .div-nov p {
+          font-size: 1.25rem;
+          padding-bottom: 0rem; }
+        .container-nov .nov .div-nov a button {
+          padding: .375rem 1.5625rem;
+          font-size: .625rem;
+          border: .125rem solid white; }
+  .destacados .container-producto h2 {
+    padding-top: .3125rem;
+    padding-bottom: .625rem;
+    margin-bottom: 0px; }
+  .destacados .container-producto article {
+    width: 11.25rem;
+    height: 13.75rem;
+    margin: 0px .5rem .3125rem .3125rem; }
+    .destacados .container-producto article div {
+      height: 6.875rem; }
+    .destacados .container-producto article h3 {
+      font-size: .75rem; }
+    .destacados .container-producto article h4 {
+      font-size: .9375rem; }
+    .destacados .container-producto article button {
+      padding: 5px 10px;
+      margin-left: 20%; }
+  footer {
+    gap: 0px;
+    height: 11.25rem; }
+    footer div ul {
+      margin-left: 1.25rem;
+      font-size: .75rem;
+      gap: .9375rem; }
+    footer .logos {
+      padding-top: 1.25rem; }
+      footer .logos img {
+        height: 3.125rem; }
+    footer .copy {
+      width: 12.5rem;
+      height: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .banner {
+    height: 12.5rem; }
+  .bannerSale {
+    height: 12.5rem; }
+  .container-tienda article {
+    width: 15.625rem;
+    height: 31.25rem;
+    margin: .3125rem .3125rem 0px .3125rem; }
+    .container-tienda article div {
+      height: 23.75rem; }
+    .container-tienda article h3 {
+      font-size: 1.25rem;
+      padding-top: .9375rem; }
+    .container-tienda article h4 {
+      margin-bottom: 1.5625rem;
+      padding-bottom: 1.5625rem; } }
+
+@media (max-width: 584px) {
+  .container-nov .nov .img-nov {
+    margin-right: .3125rem;
+    width: 40%;
+    height: 15.625rem; }
+    .container-nov .nov .img-nov img {
+      height: 17.5rem; }
+  .container-nov .nov .div-nov h2 {
+    font-size: .875rem; }
+  .container-nov .nov .div-nov p {
+    font-size: .875rem; }
+  .container-tienda article {
+    width: 11.5625rem;
+    height: 25rem; }
+    .container-tienda article div {
+      height: 17.5rem; } }
+
+@media (max-width: 425px) {
+  header .navbar {
+    gap: .9375rem; }
+    header .navbar li a {
+      font-size: .9375rem; }
+  .container-nov .nov {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%; }
+    .container-nov .nov .img-nov {
+      height: 11.25rem; }
+      .container-nov .nov .img-nov img {
+        height: 13.75rem;
+        padding-bottom: 1.875rem; }
+    .container-nov .nov .div-nov {
+      width: 18.75rem;
+      border: 1px double white;
+      height: 9.375rem; }
+  footer div ul {
+    margin-left: 0px;
+    font-size: .625rem; }
+  footer .logos img {
+    height: 2.8125rem; }
+  .banner {
+    height: 9.375rem; }
+  .bannerSale {
+    height: 9.375rem; }
+  .container-tienda article {
+    width: 9.6875rem;
+    height: 21.875rem;
+    margin: .3125rem .0625rem .0625rem .0625rem; }
+    .container-tienda article div {
+      height: 13.75rem; }
+      .container-tienda article div img {
+        border: 0.1875rem solid #111111; }
+    .container-tienda article h3 {
+      font-size: .9375rem; }
+    .container-tienda article h4 {
+      font-size: 1.25rem; } }
+
+@media (max-width: 385px) {
+  footer {
+    height: 9.375rem; }
+    footer div {
+      height: 3.125rem; }
+    footer .logos img {
+      height: 2.5rem; }
+    footer .copy {
+      display: none; }
+      footer .copy p {
+        font-size: .375rem; }
+  .destacados .container-producto {
+    justify-content: space-around; }
+    .destacados .container-producto article {
+      width: 9.375rem;
+      margin: 0rem .125rem .125rem .125rem; }
+      .destacados .container-producto article h3 {
+        font-size: .625rem; }
+      .destacados .container-producto article h4 {
+        font-size: .75rem; }
+      .destacados .container-producto article button {
+        padding: .125rem .75rem;
+        margin-left: 15%; } }

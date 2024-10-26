@@ -1,0 +1,118 @@
+@media (max-width:1024px){
+    header{
+        div{
+            h1{
+                font-size: 4em;
+            }
+        }
+        .navbar{
+            gap: 3.125rem;
+            li{
+                a{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+    .container-nov{
+        height: 31.25rem;
+        background-size: contain;
+        .nov{
+            height: 31.25rem;
+            .img-nov{
+                margin-right: 1.25rem;
+                img{
+                    height: 21.875rem;
+                    padding-bottom: 1.5625rem;
+                }
+            }
+            .div-nov{
+                height: 21.875rem;
+                h2{
+                    font-size: 1.875rem;
+                    padding-top: .625rem;
+                    padding-bottom: .625rem;
+                }
+                p{
+                    font-size: 1.875rem;
+                    padding-bottom: .625rem;
+                }
+                a{
+                    button{
+                        padding: .9375rem 3.125rem;
+                    }
+                }
+                
+            }
+        }
+    }
+    .destacados{
+        height: 56.25rem;
+        .container-producto{
+            h2{
+                padding-bottom: 1.25rem;
+                align-content: center;
+                font-size: 1.25rem;
+            }
+            article{
+                margin: 0px .3125rem .3125rem .3125rem;
+                width: 15rem;
+                height: 16.25rem;
+                div{
+                    height: 9.375rem;
+                }
+                h3{
+                    padding: .375rem 0px .3125rem .25rem;
+                    font-size: .9375rem;
+                }
+                h4{
+                    padding-left: .375rem;
+                }
+                
+                button{
+                    padding: .625rem 1.25rem;
+                    } 
+            }
+        }
+
+    }
+    footer{
+        gap: 4.375rem;
+        .wsp{
+            img{
+                height: 3.75rem;
+            }
+        }
+        div{
+            ul{
+                gap: 1.25rem;
+                font-size: .9375rem;
+                height: 5rem;
+            }
+        }
+        .logos{
+            width: 15%;
+            display: flex;
+            img{
+                height: 3.75rem;
+            }
+        }
+        .copy{
+            width: 6.875rem;
+            p{
+                font-size: .625rem;
+            };
+        }
+    }
+    .banner{
+        height: 12.5rem;
+    }
+    .container-tienda{
+        article{
+            margin: 1.25rem .625rem 0px .625rem;
+        }
+
+    }
+    
+
+}

@@ -1,0 +1,30 @@
+/*utilities*/
+@import "./utilities/maps";
+@import "./utilities/variables";
+@import "./utilities/function";
+@import "./utilities/mixins";
+/*base*/
+@import "./base/reset";
+@import "./base/tipografias";
+/*layaout*/
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+@import "./layout/nosotros";
+/*components*/
+@import "./components/navbar";
+@import "./components/cards";
+@import "./components/banners";
+@import "./components/tienda";
+@import "./components/formulario";
+
+/*mediaQ*/
+@import "./layout/MediaQ/1158px";
+@import "./layout/MediaQ/1024px";
+@import "./layout/MediaQ/768px";
+@import "./layout/MediaQ/584px";
+@import "./layout/MediaQ/425px";
+@import "./layout/MediaQ/375px";
+
+
+
