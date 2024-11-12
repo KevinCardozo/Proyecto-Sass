@@ -9,7 +9,10 @@ footer{
         bottom: 1.875rem;
         right: .625rem;
         img{
-            height: 3.4375rem
+            height: 3.4375rem;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
     div{
@@ -17,17 +20,29 @@ footer{
             display: flex;
             list-style: none;
             gap: 1.25rem;
-            a{
-                text-decoration: none;
-                color: white;
+            li{
+                &:hover{
+                    transform: scale(1.1);
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                 
+                }
+
             }
+           
         }
     }
     .logos{
         align-self: end;
         height: 40%;
         img{
-            height: 4.625rem;
+            height: 4.5rem;
+            object-fit: contain;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
     .copy{

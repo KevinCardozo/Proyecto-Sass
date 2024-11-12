@@ -1,11 +1,12 @@
 .contenedor-contacto{
     @include grid(repeat(3,1fr), repeat(3,1fr));
+    justify-content: center;
     .contacto{
         font-family: "Roboto", sans-serif;
         margin: 1.25rem 0rem 1.5625rem 0rem;
         grid-column: 2/3;
         grid-row: 1/5;
-        justify-content: center;
+        
         input{
             padding: .3125rem;
             width: 37.5rem;
@@ -17,49 +18,60 @@
         .button-contacto{
             background-color: black;
             color: white;
-            padding: .5rem;
+            padding: .625rem;
             margin-top: 1.25rem;
+            font-family: "Italiana";
+            &:hover{
+                transform: scale(1.02);
+            }
+            &:active{
+                color: black;
+                background-color: white;
+            }
         }
-        :hover{
-            text-decoration: underline;
-        }
-        :active{
-            color: black;
-            background-color: white;
-        }
+    }
+      
+    
       
 
     }
-    .suscribite{
-        margin-top: 1.875rem;
-        padding-bottom: 3.75rem;
-        grid-column: 2/3;
-        grid-row: 1/3;
-        align-items: end;
-        .contacto-email{
-            padding: .5rem;
-            width: 80%
-        }
-        .button-contacto{
-            background-color: black;
-            color: white;
-            padding: .5rem;
-            margin-top: 1.25rem;
+    .contenedor-suscribite{
+        @include flex(row, center,center, 0px);
+        .suscribite{
+            margin-top: 1.875rem;
+            padding-bottom: 3.75rem;
+            div{
+                display: flex;
+                margin-top: 1.25rem;
+                .contacto-email{
+                    padding: .1875rem;
+                    width: 50%;
+                    margin-left: 20%;
+                    
+                    
+                }
+                .button-contacto{
+                    background-color: black;
+                    color: white;
+                    padding: .375rem;
+                    font-family: "Italiana";
+                    border: none;
+                    &:hover{
+                        transform: scale(1.02);
+                    }
+                    &:active{
+                        color: black;
+                        background-color: white;
+                    }
             
-        }
-        :hover{
-            text-decoration: underline;
-        }
-        :active{
-            color: black;
-            background-color: white;
-        }
-       
-    }
-   
+            }
+
+            }
+          
+}
 }
 .titulo-contacto{
     font-family: "Italiana, System-ui";
-    margin: 0rem 0rem 1.875rem 12.5rem;
+    margin: 0rem 0rem 1.875rem 6.25rem;
     padding-top: 1.875rem;
 }

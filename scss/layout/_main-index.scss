@@ -3,9 +3,10 @@ main{
     
 }
 .container-nov{
-    background-image: url(../assets/img/banner.jpg);
-    background-position: center;
+    background-image: url(../assets/img/bannerIndex.jpeg) ;
+    background-position:end;
     background-repeat: repeat;
+    background-size: contain;
     width: 100%;
     .nov{
         @include flex (row,center,center,0rem);
@@ -22,10 +23,10 @@ main{
             height: 70%;
             margin-right: 6.25rem;
             margin-top: 1.875rem;
-            box-shadow: 5px 5px 2px 4px rgba(15, 14, 14, 0.756);
+            box-shadow: 5px 5px 2px 4px rgba(69, 68, 68, 0.842);
             /*border: 3px solid #bc3636;*/
             border-radius: 40%;
-            background-color: #05050585;
+            background-color: #050505cf;
             &:hover{
                 transform: scale(1.2);
                 box-shadow: none;
@@ -35,7 +36,7 @@ main{
         }
         .div-nov{
             @include flex(column,center,center,0rem);
-            background-color: rgba(0, 0, 0, 0.729);
+            background-color: rgba(0, 0, 0, 0.857);
             border: .3125rem double #ffffff;
             h2{
                 font-size: map-get($fuentes-sitio , max );

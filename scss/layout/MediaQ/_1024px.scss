@@ -6,10 +6,13 @@
             }
         }
         .navbar{
-            gap: 3.125rem;
+            gap: 1.25rem;
             li{
                 a{
                     font-size: 1.25rem;
+                    img{
+                        height: 1.5625rem;
+                    }
                 }
             }
         }

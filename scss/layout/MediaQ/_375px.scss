@@ -39,4 +39,25 @@
         }
        
     }
+    .contenedor-suscribite{
+        .suscribite{
+            h2{
+                font-size: .875rem;
+            }
+            div{
+                .contacto-email{
+                    width: 50%;
+                    height: 1.25rem;
+                    font-size: .625rem;
+                }
+                .button-contacto{
+                    height: 1.25rem;
+                    width: 20%;
+                    font-size: .625rem;
+                    
+                }
+
+            }
+        }
+    }
 }

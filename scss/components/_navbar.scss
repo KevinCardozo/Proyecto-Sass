@@ -1,11 +1,11 @@
 .navbar{
     display: flex;
     list-style: none;
-    gap: 70px;
+    gap: 2.5rem;
     padding-right: 1.875rem;
     li{
         &:hover{
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
         a{
             text-decoration: none;
@@ -15,9 +15,34 @@
             &:hover{
                 color: gray;
             }
+            img{
+                height: 1.875rem;
+                object-fit: contain;
+            }
             
             }
-          
+        ul{
+            background-color: black;
+            color: white;
+            div{
+                margin-right: 6.25rem;
+                
+                input{
+                    width: 7.5rem;
+                    
+                }
+                button{
+                    border: 1px solid white;
+                    color: white;
+                   
+                }
+            }
+        }
+        }
+        div{
+            display: flex;
+            
         }
     
     }
+ 

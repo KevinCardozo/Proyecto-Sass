@@ -2,7 +2,15 @@
     header{
         @include flex(column,center,none,none);
         .navbar{
-            gap: 1.25rem;
+            gap: .625rem;
+            
+           li{
+            a{
+                img{
+                    height: 1.25rem;
+                }
+            }
+           }
         }
     }
     .container-nov{
@@ -111,5 +119,48 @@
                 padding-bottom: 1.5625rem;
             }
         }
+    }
+    .contenedor-contacto{
+        .contacto{
+            h3{
+                padding-top: .625rem;
+            }
+            input{
+                width: 28.125rem;
+            }
+        }
+    }
+    .contenedor-suscribite{
+        .suscribite{
+            h2{
+                font-size: 1.25rem;
+            }
+            div{
+                .contacto-email{
+                    width: 45%;
+                    height: 1.875rem;
+                }
+                .button-contacto{
+                   height: 1.875rem;
+                   font-size: .9375rem;
+                   border: none;
+                }
+            }
+
+        }
+      
+    }
+    .titulo-contacto{
+        margin-left: 3.125rem ;
+    }
+
+    .nosotros{
+        margin-left: 1.5625rem;
+        width: 90%;
+        iframe{
+            width: 90%;
+            
+        }
+
     }
 }

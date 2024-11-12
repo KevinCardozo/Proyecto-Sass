@@ -45,6 +45,12 @@
                 height: 2.8125rem;
             }
         }
+        .wsp{
+            bottom: .125rem;
+            img{
+                height: 1.875rem;
+            }
+        }
     }
     .banner{
         height: 9.375rem;
@@ -72,5 +78,51 @@
         }
 
     }
+    .contenedor-contacto{
+        .contacto{
+            margin-top: .625rem;
+            h3{
+                font-size: .9375rem;
+            }
+            input{
+                width: 18.75rem;
+                height: 1.5625rem;
+            }
+            .contacto-mensaje{
+                height: 11.25rem;
+            }
+            .button-contacto{
+                font-size: .5rem;
+                padding: .125rem;
+                width: 3.125rem;
+                margin-top: .625rem;
+            }
+        }
+    }
+    .titulo-contacto{
+        margin-left: .625rem;
+    }
+
+    .destacados{
+        .container-producto{
+            article{
+                &:hover{
+                    transform: scale(1.04);
+                }
+            }
+        }
+    }
    
+    .nosotros{
+        margin-left: 0rem;
+        padding: 1.25rem;
+        p{
+            font-size: .9375rem;
+        }
+        iframe{
+            height: 21.875rem;
+            
+        }
+
+    }
 }

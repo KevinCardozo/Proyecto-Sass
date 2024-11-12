@@ -10,13 +10,17 @@
         &:hover{
             transform: scale(1.07);
             transition: transform 0.5s cubic-bezier(0,.9,.71,.95);
+            
         }
         div{
             img{
                 width: 100%;
                 height: 100%;
                 border: .5rem solid rgb(17, 17, 17);
-                background-color: rgba(75, 80, 80, 0.76);
+                background-image: linear-gradient(rgb(124, 124, 124), rgb(40, 40, 40));
+                &:hover{
+                    background-image: linear-gradient(rgb(219, 219, 219), rgb(143, 143, 143));
+                }
             }
         }
         h3{

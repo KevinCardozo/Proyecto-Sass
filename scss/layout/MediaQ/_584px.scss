@@ -29,6 +29,68 @@
         }
 
     }
+    .contenedor-contacto{
+        .contacto{
+            h3{
+                margin-bottom: 0px;
+            }
+            input{
+                width: 25rem;
+            }
+            .contacto-mensaje{
+                height: 12.5rem;
+            }
+            .button-contacto{
+                padding: .3125rem;
+            }
+        }
+    }
+    .contenedor-suscribite{
+        .suscribite{
+            h2{
+                font-size: 1rem;
+            }
+            div{
+                .contacto-email{
+                    width: 50%;
+                    height: 1.25rem;
+                    font-size: .75rem;
+                }
+                .button-contacto{
+                    height: 1.25rem;
+                    width: 20%;
+                    font-size: .75rem;
+                    padding: 0;
+                }
+
+            }
+        }
+    }
+
+    .navbar{
+        div{
+            position: fixed;
+            z-index: 1;
+            top: .3125rem;
+            right: .625rem;
+
+        }
+    }
+    .nosotros{
+        width: 100%;
+        p{
+            font-size: 1.25rem;
+        }
+        iframe{
+            width: 100%;
+            height: 21.875rem;
+            
+        }
+
+    }
+}
+   
+    
+
   
     
-}
